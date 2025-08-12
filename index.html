@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insurance Benefit Terms and Conditions</title>
+    <!-- <link rel="stylesheet" href="styles.css" type="text/css" /> -->
+    <style>
+      /* Font Importing */
+
+      @font-face {
+        font-family: "Gilroy-SemiBold";
+        src: url("") format("opentype");
+      }
+
+      @font-face {
+        font-family: Gilroy-Black;
+        src: url(Gilroy-Black.otf);
+      }
+
+      @font-face {
+        font-family: "Gilroy-ExtraBold";
+        src: url(Gilroy-ExtraBold.otf);
+      }
+
+      @font-face {
+        font-family: "Gilroy-Bold";
+        src: url(Gilroy-Bold.otf);
+      }
+
+      @font-face {
+        font-family: "Gilroy-Medium";
+        src: url(Gilroy-Medium.otf);
+      }
+
+      /* CSS Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        box-sizing: border-box;
+        padding-left: 21px;
+        padding-right: 21px;
+        margin-bottom: 10px;
+      }
+
+      /* Standard */
+
+      html {
+        padding: 0;
+      }
+
+      body {
+        width: 600px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+
+      header {
+        padding-left: 0;
+        padding-top: 10px;
+      }
+
+      footer {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
+
+      div {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-family: "Gilroy-ExtraBold";
+        font-size: 20pt;
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        font-family: "Gilroy-Bold";
+        color: #fa453d;
+        font-size: 15pt;
+      }
+
+      p {
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        line-height: 10pt;
+      }
+
+      li {
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        line-height: 10pt;
+        padding-left: 5px;
+      }
+
+      ol {
+        padding-left: 21px;
+        margin-left: 20px;
+      }
+
+      a {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        color: #fa453d;
+      }
+
+      /* Nested list indentation */
+      ol ol {
+        margin-left: 20px;
+        padding-left: 15px;
+      }
+
+      ol ol ol {
+        margin-left: 20px;
+        padding-left: 15px;
+      }
+
+      /* Custom indent classes */
+      .indent-1 {
+        margin-left: 20px;
+      }
+
+      .indent-2 {
+        margin-left: 40px;
+      }
+
+      .indent-3 {
+        margin-left: 60px;
+      }
+
+      ul {
+        padding-left: 21px;
+        margin-left: 20px;
+      }
+
+      /* Inline text styling */
+
+      strong {
+        font-weight: inherit;
+        padding: 0;
+        margin: 0;
+      }
+
+      .bolded {
+        font-weight: bold;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .colour {
+        color: #fa453d;
+      }
+
+      .subhead {
+        color: black;
+        font-size: 8pt;
+        font-family: inherit;
+      }
+
+      /* IDs - Images */
+
+      #header-img {
+        width: 90%;
+        height: auto;
+        padding: 0;
+      }
+
+      #footer-img {
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+      }
+
+      /* Graphical Elements */
+
+      .grey-bg {
+        background-color: #f2f1f1;
+        padding-top: 10px;
+        padding-bottom: 0.1px;
+        margin-bottom: 10px;
+      }
+
+      /* Tables */
+
+      .table-2-cl {
+        display: grid;
+        grid-template-columns: 180px max-content;
+        padding-left: 21px;
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        line-height: 10pt;
+        margin-bottom: 15px;
+      }
+
+      .cell-1 {
+        font-weight: bold;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-right: 10px;
+        padding-bottom: 2px;
+        padding-top: 2px;
+      }
+
+      .cell-2 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 2px;
+        padding-top: 2px;
+      }
+
+      /* Span 2 columns */
+      .span-2 {
+        grid-column: 1 / -1; /* Spans from column 1 to the last column */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-bottom: 2px;
+        padding-top: 2px;
+      }
+    </style>
+
+    <script>
+      const urls = {
+        font: atob(
+          "aHR0cHM6Ly9vbGRzaXRlLnRoZXVubGltaXRlZC5jby56YS9lbWFpbHMvYnJhbmQvR2lscm95LVNlbWlCb2xkLm90Zg=="
+        ),
+        header: atob(
+          "aHR0cHM6Ly9vbGRzaXRlLnRoZXVubGltaXRlZC5jby56YS9lbWFpbHMvYnJhbmQvaGVhZGVyLXRleHQuc3Zn"
+        ),
+        footer: atob(
+          "aHR0cHM6Ly9vbGRzaXRlLnRoZXVubGltaXRlZC5jby56YS9lbWFpbHMvYnJhbmQvdHUtZm9vdGVyLnN2Zw=="
+        ),
+      };
+
+      const style = document.createElement("style");
+      style.innerHTML = `@font-face { font-family: "Gilroy-SemiBold"; src: url("${urls.font}") format("opentype"); }`;
+      document.head.appendChild(style);
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const headerImg = document.getElementById("header-img");
+        const footerImg = document.getElementById("footer-img");
+        if (headerImg) headerImg.src = urls.header;
+        if (footerImg) footerImg.src = urls.footer;
+      });
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="" alt="Header text" id="header-img" />
+      <h1>Accidental Injury Cash Benefit</h1>
+    </header>
+
+    <!-- BREAK -->
+
+    <div>
+      <p>
+        <strong class="bolded"> PLEASE NOTE: </strong> these terms and
+        conditions, together with the policy wording, constitutes the agreement
+        between you, The Unlimited and the Insurer named below (the “policy”). 
+        You agree and want to be a party to this agreement. Please make sure
+        that all the information you have given us is accurate and that this
+        insurance benefit is the same as it was explained to you.
+      </p>
+      <p>
+        The Unlimited agrees to pay your claim/s, subject to any
+        proposal/application or other information supplied by, or on behalf of
+        you, including any recorded phone calls made to or received from you.
+        This will be the basis of your policy and must be true and complete or
+        this insurance benefit may not be paid.
+      </p>
+    </div>
+
+    <!-- BREAK -->
+
+    <div class="grey-bg">
+      <h2>
+        Definitions
+        <strong class="subhead"
+          >(what these words mean when used in these insurance benefit terms and
+          conditions)</strong
+        >
+      </h2>
+      <ol>
+        <li>
+          <strong class="bolded"> Accidental injury</strong> an injury sustained
+          because of an accident which causes you or any other insured person to
+          be admitted to a hospital by a doctor for a period of no less than 24
+          hours in a row, and which injury could not have been attended to as an
+          out/day patient or at home.
+        </li>
+        <li>
+          <strong class="bolded">Aditional treatment</strong> means any
+          treatment you or another insured person receives for conditions other
+          than the treatment received or required to be received directly
+          related to the insured event for which you or any other insured person
+          are covered.
+        </li>
+        <li>
+          <strong class="bolded">Insured event</strong> means an accident which
+          results in an insured person’s admission/s to hospital because of an
+          accidental injury.
+        </li>
+      </ol>
+    </div>
+
+    <!-- BREAK -->
+
+    <div>
+      <h2>Important information about this insurance benefit</h2>
+      <ol>
+        <li class="bolded">
+          The Insurer that provides you with this insurance benefit is Santam
+          Structured Life Limited, a licensed life insurer and an authorised
+          financial services provider (FSP Number 1026) (the “Insurer”).
+        </li>
+        <li>
+          You have bought an accidental injury cash benefit (“accident cash
+          benefit”) which covers an insured person in the event of their
+          admission to hospital because of an accidental injury, from any cause
+          not excluded under the policy. The Unlimited will pay the set
+          <strong class="italic colour"> daily benefit amount </strong> in
+          Rands, up to the
+          <strong class="italic colour">
+            maximum insurance benefit limit </strong
+          >, following their admission to hospital because of an accidental
+          injury. Please see your
+          <strong class="italic colour"> benefit schedule </strong> for the
+          benefit limits applicable to your accident cash benefit.
+        </li>
+        <li>
+          This is not a hospital plan.
+          <strong class="bolded">
+            THERE IS NO COVER FOR ILLNESS CLAIMS OR HOSPITALISATION FOR
+            ILLNESS.</strong
+          >
+        </li>
+        <li>
+          This is
+          <strong class="bolded"> not a medical scheme.</strong> The cover is
+          not the same as a medical scheme and is not a substitute for medical
+          scheme membership.
+        </li>
+        <li>
+          You are only covered for injuries caused by an accident which occurred
+          within the borders of South Africa.
+        </li>
+      </ol>
+    </div>
+
+    <!-- BREAK -->
+
+    <div class="grey-bg">
+      <h2>Insurance benefit limits</h2>
+      <p>
+        <strong class="bolded"> Accident cash benefit: </strong> an insured
+        person is covered for each full day (24 hours in a row) spent in
+        hospital because of an accidental injury.
+      </p>
+      <p>
+        The insured person will be paid a set
+        <strong class="bolded italic colour">
+          daily benefit Rand amount, up to a maximum number of days
+        </strong>
+        <strong class="bolded"> and up to the </strong>
+        <strong class="bolded italic colour">
+          maximum insurance benefit limit per insured event.
+        </strong>
+      </p>
+      <p>
+        For example, if your chosen benefit has a set daily benefit Rand amount
+        of R1 000; your maximum number of days is 100 and your maximum insurance
+        benefit limit is R100 000; this means that an insured person is covered
+        for R1 000 per full day spent in hospital, for up to 100 days, and up to
+        a maximum insurance benefit limit of R100 000 per insured event.
+      </p>
+      <p>
+        <strong class="bolded"
+          >Please call The Unlimited on 0861 990 000 if you have any queries
+          about your accident cash benefit and your benefit limits.</strong
+        >
+      </p>
+      <p>
+        <strong class="bolded"
+          >You and any additional lives you have chosen to cover under the
+          accident cash benefit will be covered, provided that:</strong
+        >
+      </p>
+      <ul>
+        <li>
+          if you have chosen to cover your
+          <strong class="bolded"> spouse </strong>, The Unlimited has your
+          spouse’s name and date of birth on record
+        </li>
+        <li>
+          if you have chosen to cover your
+          <strong class="bolded">
+            children (up to a maximum of 5) and/or you additional dependants (up
+            to a maximum of 3)</strong
+          >, The Unlimited has their names and dates of birth on record.
+        </li>
+        <li>
+          children and additional dependants are related to you through blood or
+          a legally recognised relationship, and they are totally financially
+          dependent on you i.e. you are responsible for their livelihood.
+        </li>
+        <li>
+          The Unlimited has received the
+          <strong class="bolded">
+            additional premium/s for all additional lives insured, where
+            applicable.</strong
+          >
+        </li>
+      </ul>
+      <p>
+        <strong class="bolded"
+          >Maximum payout (accident cash benefit only)</strong
+        >
+      </p>
+      <p>
+        If you have any other health insurance policies, the maximum daily limit
+        per insured person for hospitalisation for an accidental injury cannot
+        exceed R4,200.00 from all policies combined (including other accident
+        cash benefits you may have with another insurer). The Unlimited is only
+        liable to pay or contribute the lesser of their pro rata portion of the
+        maximum payable daily limit, or the maximum
+        <strong class="bolded italic colour">
+          daily benefit Rand amount.
+        </strong>
+      </p>
+    </div>
+
+    <!-- BREAK -->
+
+    <div>
+      <h2>Premium payable to the insurer</h2>
+      <ol>
+        <li>
+          Please refer to your
+          <strong class="italic colour"> benefit schedule </strong> for the
+          premium payable to the Insurer for this insurance benefit.
+        </li>
+        <li>
+          <strong class="bolded">Please note</strong>, additional premiums may
+          apply for covering additional lives under this insurance benefit.
+        </li>
+        <li>
+          From the total premium you pay, the Insurer pays The Unlimited: 
+        </li>
+        <ol>
+          <li>
+            up to the statutory regulated commission of 3.25%, in terms of the
+            Long-Term Insurance Act; and 
+          </li>
+          <li>
+            up to 41.75% (binder fee) for certain administrative (binder)
+            functions performed on behalf of the Insurer.
+          </li>
+        </ol>
+      </ol>
+    </div>
+
+    <!-- BREAK -->
+
+    <div>
+      <h2>Waiting periods specific to this insurance benefit</h2>
+      <p>
+        There is no waiting period for your accident cash benefit. You can claim
+        for insured events which happen after the Insurer has received the first
+        premium applicable to this insurance benefit from you.
+      </p>
+    </div>
+
+    <!-- BREAK -->
+
+    <div>
+      <h2>Who will The Unlimited pay?</h2>
+      <p>
+        The Unlimited will pay you, by payment into your South African bank
+        account, from which they have collected the premium.
+      </p>
+    </div>
+
+    <!-- BREAK -->
+
+    <div class="grey-bg">
+      <h2>
+        Compulsory documents / information reequired to claim under this
+        insurance benefit
+      </h2>
+      <p>
+        <strong class="bolded"> PLEASE NOTE: </strong> The medical information
+        in the form of hospital admission forms / hospital records with details
+        of the treatment, and that you need to provide to The Unlimited, must be
+        obtained by you from the clinic/hospital or the doctor/nurse who treated
+        the insured patient.
+      </p>
+      <ol>
+        <li>Completed claim form</li>
+        <li>
+          Please provide copies of the specific medical information The
+          Unlimited requires to process your claim, as follows:
+        </li>
+        <ol>
+          <li>
+            The date and time of the insured person's admission to, and
+            discharge from the hospital / clinic;
+          </li>
+          <li>Contact details of the hospital;</li>
+          <li>
+            The final diagnosis of the accidental injury/injuries and the reason
+            for the time spent in hospital;
+          </li>
+          <li>
+            All medication and treatment administered to the insured person;
+          </li>
+          <li>
+            The details of any procedures the insured person underwent; and
+          </li>
+          <li>The long-term prognosis for the insured person's injuries.</li>
+        </ol>
+        <li>
+          Where an incident was, or should be, reported to the SAPS, you may
+          have to provide The Unlimited with a copy of the police or accident
+          report.
+        </li>
+      </ol>
+    </div>
+
+    <!-- BREAK -->
+
+    <div>
+      <h2>Important information about the insurer</h2>
+      <p>
+        The Insurer that underwrites the insurance benefit is a licensed life
+        insurer and an authorised financial services provider.
+      </p>
+
+      <div class="table-2-cl">
+        <div class="cell-1">Company Name:</div>
+        <div class="cell-2">
+          <strong class="bolded">Santam Structured Life Limited </strong>
+        </div>
+        <div class="cell-1">Physical Address:</div>
+        <div class="cell-2">
+          7th Floor, Alice Lane Building 3, c/o Alice Lane & 5th Street,
+          Sandton, 2196
+        </div>
+        <div class="cell-1">Postal Address:</div>
+        <div class="cell-2">PO Box 652659, Benmore, 2010</div>
+        <div class="cell-1">Telephone Number:</div>
+        <div class="cell-2">0860 762 745 or 011 685 7600</div>
+        <div class="cell-1">Website:</div>
+        <div class="cell-2">
+          <a
+            href="https://www.santam.co.za/insurance/for-specialised-risks/santam-structured-insurance/"
+            >www.santam.co.za</a
+          >
+        </div>
+        <div class="cell-1">Company Registration Number:</div>
+        <div class="cell-2">2002/013263/06</div>
+        <div class="cell-1">FSP License Number:</div>
+        <div class="cell-2">1026</div>
+        <div class="cell-1">VAT Number:</div>
+        <div class="cell-2">4100149816</div>
+      </div>
+
+      <div class="table-2-cl">
+        <div class="cell-1 span-2">
+          Details of internal Compliance Department:
+        </div>
+        <div class="cell-1">Telephone number:</div>
+        <div class="cell-2">0860 762 745 or 011 685 7600</div>
+        <div class="cell-1">Email address:</div>
+        <div class="cell-2">SSL.compliance@santam.co.za</div>
+        <div class="cell-1">Details of FAIS Compliance:</div>
+        <div class="cell-2">Compli-Serve SA (Pty) Ltd</div>
+        <div class="cell-1">Compliance Officer:</div>
+        <div class="cell-2">Ms Theresa Rynners</div>
+        <div class="cell-1">Telephone Number:</div>
+        <div class="cell-2">087 897 6970</div>
+        <div class="cell-1">Email:</div>
+        <div class="cell-2">theresa@compliserve.co.za</div>
+      </div>
+
+      <div class="table-2-cl">
+        <div class="cell-1 span-2">The Market Conduct Officer:</div>
+        <div class="cell-1">Telephone:</div>
+        <div class="cell-2">011 685 7600 or 0860 762 745</div>
+        <div class="cell-1">Email:</div>
+        <div class="cell-2">
+          SSL.Rejections@santam.co.za (Dispute of Rejection)
+        </div>
+        <div class="cell-1">Email:</div>
+        <div class="cell-2">SSL.Complaints@santam.co.za (Complaint)</div>
+      </div>
+    </div>
+
+    <footer>
+      <img src="" alt="The Unlimited" id="footer-img" />
+    </footer>
+  </body>
+</html>
